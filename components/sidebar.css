@@ -1,0 +1,68 @@
+.side-bar{
+    font-family: 'Roboto', sans-serif;
+    flex: 0 0 240px;
+    margin-right: 1rem;
+    background-color: #fff;
+}
+
+
+.list-topic .active{
+    font-weight: bold;
+    color: black;
+    border-bottom: 3px solid;      
+}
+
+
+.list-topic li{
+    font-size: 18px;
+    list-style: none;
+    padding: .7rem 1.1rem;
+    padding-bottom: 1rem;
+    font-weight: 300;
+    color: #000;
+    
+}
+
+.list-topic li a:hover{
+    cursor: pointer;
+    color : grey;
+    font-size: 21px ;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #2980B9,
+      0 0 20px #2980B9,
+      0 0 40px #2980B9,
+      0 0 80px #2980B9,
+      0 0 90px #2980B9,
+      0 0 100px #2980B9,
+      0 0 150px #2980B9;
+}
+
+.list-topic a{
+    display: flex;
+    align-items: center;
+    color : #444444;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width : 800px){
+    .side-bar{
+        position: fixed;
+        top : 0;
+        bottom: 0;
+        left: 0;
+        background: white;
+        width: 280px;
+        scroll-behavior: smooth;
+        overflow: auto;
+        z-index: 2;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        display: none;
+    }
+
+    .btn-float{
+        display: block;
+    }
+
+}
